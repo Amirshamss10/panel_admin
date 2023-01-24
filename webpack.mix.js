@@ -11,7 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.styles([
+    "resources/css/styles.css"
+], "public/css/main.css");
+mix.js([
+    "resources/js/scripts.js", 
+    "resources/demo/chart-area-demo.js", 
+    "resources/demo/chart-bar-demo.js", 
+    "resources/js/datatables-simple-demo.js"
+], "public/js/main.js")
