@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.styles([
-    "resources/css/styles.css"
+    "resources/css/styles.css",
 ], "public/css/main.css");
 mix.js([
     "resources/js/scripts.js", 
